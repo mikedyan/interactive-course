@@ -14,12 +14,12 @@ Try a course built with this skill: [Git Interactive Crash Course](https://miked
 
 ### Claude Code
 
-Copy `interactive-course.md` into your project's `.claude/commands/` directory:
+Copy `SKILL.md` into your project's `.claude/commands/` directory:
 
 ```bash
 mkdir -p .claude/commands
 curl -o .claude/commands/interactive-course.md \
-  https://raw.githubusercontent.com/mikedyan/interactive-course/main/interactive-course.md
+  https://raw.githubusercontent.com/mikedyan/interactive-course/main/SKILL.md
 ```
 
 Then use it as a slash command:
@@ -36,11 +36,11 @@ Or to enhance an existing course:
 
 ### OpenClaw
 
-Add the skill file to your OpenClaw skills directory and invoke it the same way.
+Drop `SKILL.md` into your OpenClaw skills directory and invoke it the same way.
 
 ### As a Standalone Prompt
 
-You can also paste the contents of `interactive-course.md` directly into any LLM conversation as a system prompt or user message, then ask it to build a course on your topic.
+You can also paste the contents of `SKILL.md` directly into any LLM conversation as a system prompt or user message, then ask it to build a course on your topic.
 
 ## What It Builds
 
