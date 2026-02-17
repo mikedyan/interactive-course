@@ -1,6 +1,6 @@
 # Interactive Course
 
-A skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [OpenClaw](https://github.com/nicobailon/openclaw) that generates deep, interactive learning experiences as single self-contained HTML files.
+A skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [OpenClaw](https://github.com/openclaw/openclaw) that generates deep, interactive learning experiences as single self-contained HTML files.
 
 Give it any topic and it builds a full course with drag-and-drop exercises, terminal sandboxes, SVG visualizations, timed speed rounds, knowledge assessments, and a holographic graduation certificate -- all in one HTML file with zero dependencies.
 
@@ -14,15 +14,17 @@ Try a course built with this skill: [Git Interactive Crash Course](https://miked
 
 ### Claude Code
 
-Copy `SKILL.md` into your project's `.claude/commands/` directory:
+Clone this repo into your skills directory -- either per-project or personal (all projects):
 
 ```bash
-mkdir -p .claude/commands
-curl -o .claude/commands/interactive-course.md \
-  https://raw.githubusercontent.com/mikedyan/interactive-course/main/SKILL.md
+# Per-project (committed to version control)
+git clone https://github.com/mikedyan/interactive-course.git .claude/skills/interactive-course
+
+# Personal (available in all your projects)
+git clone https://github.com/mikedyan/interactive-course.git ~/.claude/skills/interactive-course
 ```
 
-Then use it as a slash command:
+Then invoke with:
 
 ```
 /interactive-course Build a course on Docker containers from zero to production
@@ -36,7 +38,13 @@ Or to enhance an existing course:
 
 ### OpenClaw
 
-Drop `SKILL.md` into your OpenClaw skills directory and invoke it the same way.
+Clone into your OpenClaw workspace skills directory:
+
+```bash
+git clone https://github.com/mikedyan/interactive-course.git ~/.openclaw/workspace/skills/interactive-course
+```
+
+Then invoke with `/interactive-course` the same way.
 
 ### As a Standalone Prompt
 

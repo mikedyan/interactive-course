@@ -1,3 +1,9 @@
+---
+name: interactive-course
+description: Create or enhance an interactive course as a single self-contained HTML file. Builds deep learning experiences with drag-and-drop, terminal sandboxes, visualizations, speed rounds, and graduation certificates.
+argument-hint: "[topic or path to existing HTML file]"
+---
+
 Create or enhance an interactive course as a single self-contained HTML file.
 
 $ARGUMENTS
